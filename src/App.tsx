@@ -2,6 +2,7 @@ import { useState } from "react";
 import WeatherCard from "./components/Card";
 import ErrorMessage from "./components/ErrorMessage";
 import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
 import WeatherSearch from "./components/Search";
 import WeatherSkeleton from "./components/Skeleton";
 import { useFetch } from "./hooks/useFetch";
@@ -28,6 +29,8 @@ export default function Weather() {
     <div
       className={`flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-300 via-blue-900 to-zinc-950 p-3 sm:p-4 md:p-6 lg:p-8`}
     >
+      <Header />
+
       <div className="bg-white/40 backdrop-blur-lg p-4 sm:p-6 md:p-8 lg:p-10 rounded-2xl sm:rounded-3xl shadow-xl w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl text-gray-900 space-y-6 sm:space-y-8 relative overflow-hidden">
         <WeatherSearch onSearch={handleSearch} isLoading={loading} />
 

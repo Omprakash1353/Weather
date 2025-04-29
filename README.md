@@ -38,3 +38,5 @@ npm run dev
 
 5. **Access the Application**:
    Open your browser and navigate to `http://localhost:5173`.
+
+![alt text](<public/Screenshot from 2025-04-28 16-53-12.png>)
